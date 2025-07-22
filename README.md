@@ -67,7 +67,7 @@ JWT_EXPIRES_IN=15m
 JWT_REFRESH_EXPIRES_IN=7d
 
 # App
-PORT=3000
+PORT=3333
 NODE_ENV=development
 ```
 
@@ -104,7 +104,7 @@ npm run dev:setup
 
 Após iniciar o servidor, acesse a documentação Swagger:
 
-- **URL**: http://localhost:3000/docs
+- **URL**: http://localhost:3333/docs
 - **Descrição**: Documentação completa da API com exemplos e testes
 
 ## 🏗️ Estrutura do Projeto
@@ -228,7 +228,7 @@ npm run format             # Prettier
 ### Variáveis de Ambiente de Desenvolvimento
 ```env
 NODE_ENV=development
-PORT=3000
+PORT=3333
 DB_HOST=localhost
 DB_PORT=5432
 DB_USERNAME=postgres
@@ -262,7 +262,7 @@ docker-compose down
 ### Build da Imagem
 ```bash
 docker build -t ticketeria .
-docker run -p 3000:3000 ticketeria
+docker run -p 3333:3333 ticketeria
 ```
 
 ## 📊 Monitoramento

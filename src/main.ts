@@ -10,7 +10,7 @@ async function bootstrap() {
 
   // Configuração global de CORS
   app.enableCors({
-    origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3000'],
+    origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3333'],
     credentials: true,
   });
 
@@ -65,7 +65,7 @@ async function bootstrap() {
       },
       'JWT-auth',
     )
-    .addServer('http://localhost:3000', 'Servidor de Desenvolvimento')
+    .addServer('http://localhost:3333', 'Servidor de Desenvolvimento')
     .addServer('https://api.ticketeria.com', 'Servidor de Produção')
     .build();
 
@@ -86,7 +86,7 @@ async function bootstrap() {
     `,
   });
 
-  const port = process.env.PORT || 3000;
+  const port = process.env.PORT || 3333;
   await app.listen(port);
   
   console.log(`

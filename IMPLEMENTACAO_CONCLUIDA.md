@@ -238,7 +238,7 @@ JWT_EXPIRES_IN=15m
 JWT_REFRESH_EXPIRES_IN=7d
 
 # Aplicação
-PORT=3000
+PORT=3333
 NODE_ENV=development
 ```
 
@@ -274,7 +274,7 @@ npm run start:dev
 ```
 
 ### 2. Acesse a Documentação
-- **URL:** http://localhost:3000/docs
+- **URL:** http://localhost:3333/docs
 - **Descrição:** Swagger completo com exemplos
 
 ### 3. Teste com Usuários
