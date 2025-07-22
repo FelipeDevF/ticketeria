@@ -30,6 +30,7 @@ export class User {
   password: string;
 
   @ApiProperty({ description: 'CPF do usuário', required: false })
+  @Index()
   @Column({ type: 'varchar', length: 14, nullable: true })
   cpf: string;
 

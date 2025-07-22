@@ -85,7 +85,9 @@ docker-compose up -d
 npm run db:setup
 
 # Ou individualmente:
-npm run migrate  # Executa migrações
+pnpm typeorm:init:windows   # Cria as migrações iniciais baseado nas entities criadas
+pnpm typeorm:windows migration:generate src/database/migrations/Nome_Da_Migragion   # Cria as migrações
+pnpm typeorm:windows migration:run  # Executa migrações
 npm run seed     # Executa seeds
 ```
 
